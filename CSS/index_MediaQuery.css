@@ -115,6 +115,7 @@
 
     .ContenHome {
         padding-top: 71px;
+        font-size: 1.3rem;
     }
 
     .ContenHome .ContenHome--Left {
@@ -125,19 +126,16 @@
     .ContenHome--Right__ImageFace {
         width: 207px;
         top: -101px;
-        left: 20%;
+        left: 24%;
     }
 
     .ContenHome--Right__ImageBackground {
-        height: 326%;
-    }
-
-    .ContenHome--Right__ImageBackground {
-        left: -14px;
+        height: 372%;
+        left: -34px;
     }
 
     .ContenHome--Left .ImageHomeWork {
-        transform: translateX(-79px) translateY(-10%);
+        transform: translateX(-16px) translateY(-10%);
     }
 
     .TalkForSelf--font{
@@ -146,7 +144,7 @@
     }
 
     .fornt-div__mobile{
-        width: 75% !important;
+        width: 110% !important;
         font-size: 1.2rem;
         line-height: 33px;
     }
@@ -208,6 +206,11 @@
     .navigation_top  li a{
         padding-left: 20px;
     }
+
+    .ImageHomeWork{
+        width: 138%;
+    }
+
 
 
 }
