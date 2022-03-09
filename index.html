@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/index_MediaQuery.css">
 
-    <title>PROFILE PERSIONAL</title>
+    <title>PROFILE PERSONAL</title>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -18,7 +18,7 @@
     <div class="header">
         <div class="header--left">
             <img src="/IMAGES/LogoName.jpg" alt="ảnh logo">
-            <a href="#">  PERSIONAL </a>
+            <a href="#">PERSONAL</a>
         </div>
 
         <div class="iconMenu">
@@ -263,6 +263,8 @@
     </div>
 
     <script>
+
+
         var menuIconClick= document.getElementById('iconMenu');
         var menuUlClick= document.getElementById('menuUl');
         let baground_hide_display= document.getElementsByClassName('baground_hide');
@@ -274,16 +276,21 @@
             menuUlClick.style.display= 'block';
             baground_hide_display[0].style.display= 'block';
         }
-        
+    
+
         // Đóng menu
         for(var i=0; i<menu_a_click.length; i++)
         {
             var menu_a_click_item= menu_a_click[i];
             menu_a_click_item.onclick=  function()
             {
+                var SceenWidth= document.documentElement.clientWidth;
+                if(SceenWidth<=740)
+                {
                 menuIconClick.style.display= 'block';
                 menuUlClick.style.display= 'none';
                 baground_hide_display[0].style.display= 'none';
+                }
             }
         }
 
